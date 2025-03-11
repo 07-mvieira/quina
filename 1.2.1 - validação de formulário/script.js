@@ -11,3 +11,8 @@ function confirma(){
     document.getElementById("sim").style.display = "block";
     document.getElementById("sim").innerHTML = `entendi, o seu nome é ${nome}! lindo nome :D`;
 };
+
+function rejeita(){
+    document.getElementById("sim").innerHTML = `entendido. recomeçando sistema`;
+    window.location.reload()
+}
