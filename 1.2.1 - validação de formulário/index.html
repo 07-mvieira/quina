@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1.2.1</title>
+</head>
+<body>
+    <header>
+        <h1>validação de nome</h1>
+    </header>
+    <main>
+        <label for="nomeCaixa">qual é o seu nome?</label>
+        <input id="nomeCaixa" type="text">
+        <button onclick="verificarNome()">confirmar</button>
+
+        <div id="hidden" style="display:none">
+            <p id="confirmacao">você confirma que seu nome é?</p>
+            <button class="confBotao" onclick="confirma()">sim</button>
+            <button class="confBotao" onclick="rejeita()">não</button>
+        </div>
+        <p id="sim" style="display:none">entendi, o seu nome é ! lindo nome :D</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
