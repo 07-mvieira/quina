@@ -1,3 +1,4 @@
+<!--essa página não tá pronta porque a adição não funciona direito AHHAHAHAHAHAHAHAHAHAHAHAH-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,9 +12,37 @@
         <h1>quina</h1>
     </header>
     <main>
-        <label for="nomeCaixa">qual é o seu nome?</label>
-        <input id="nomeCaixa" type="text">
-        <button onclick="verificarNome()">confirmar</button>
+        <h3>por favor só coloque números esse sistema não sabe filtrar :(</h3>
+        <h4>nós (eu) esperamos que goste de notação polonesa reversa</h4>
+        <div id="calculo"> <!--adivinhe por que eu deletei a página toda quando o usuário insere o sinal :DDDD eu odeio a minha vida-->
+            <div id="numeroUmCaixa">
+                <label for="numeroUm">digite o primeiro número:</label>
+                <input id="numeroUm" type="number">
+                <button id="numeroUmBotao" onclick="lerNumeroUm()">confirmar</button>
+            </div>
+
+            <div id="numeroDoisCaixa" style="display: none">
+                <label for="numeroDois">digite o segundo número:</label>
+                <input id="numeroDois" type="number">
+                <button id="numeroDoisBotao" onclick="lerNumeroDois()">confirmar</button>
+            </div>
+
+            <div id="ops" style="display: none">
+                <p>qual operação será efetuada?</p>
+                <button class="op" id="adicao" title="adição" onclick="final(); adi()">+</button>
+                <button class="op" id="subtracao" title="subtração" onclick="final(); sub()">-</button>
+                <button class="op" id="multiplicacao" title="multiplicação" onclick="final(); mult()">*</button>
+                <button class="op" id="divisao" title="divisão" onclick="final(); div()">/</button>
+                <button class="op" id="potencia" title="potenciação (representada em javascript como **)" onclick="final(); pot()">^</button>
+                <button class="op" id="raiz" title="raiz (representada em javascript como Math.sqrt())" onclick="final(); raiz()">√</button>
+                <button class="op" id="modulo" title="módulo: o resto de uma divisão (ex.: 15 % 2 = 1)" onclick="final(); mod()">mod</button>
+            </div>
+        </div>
+
+        <div id="resCaixa" style="display: none">
+            <p>seu resultado: <strong id="resultado"></strong></p>
+            <button id="purge" onclick="purge()">recomeçar</button>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
