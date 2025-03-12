@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f2ab91;
+    font-family: cursive;
+}
+
+#sidenav{
+    background-color: #000;
+    color: #fff;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+#grid-container{
+    display: grid;
+    justify-items: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 22vh 22vh 22vh;
+}
+
+#grid-container button{
+    border-color: #fff;
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 8px;
+    font-family: cursive;
+    font-size: 17px;
+    height: 85px;
+    padding: 7px;
+    width: 150px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#btn-1{
+    background-color: #ac2828;
+    color: #fff;
+}
+
+#btn-2{
+    background-color: #f2ab91;
+}
+
+#btn-2:disabled{
+    background-color: #b6a59f;
+}
+
+#btn-2:disabled:hover{
+    cursor: default;
+}
+
+#btn-3{
+    background-color: #ac2828;
+    color: #fff;
+}
+
+#btn-4{
+    background-color: #000;
+    color: #fff;
+}
+
+#btn-4:disabled{
+    background-color: #00000088;
+    color: #ffffff88;
+    cursor: default;
+}
+
+#btn-5{
+    background-color: #999;
+    color: #00ffd9;
+}
+
+#btn-8:disabled{
+    cursor: default;
+}

@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../sidenav.css">
     <title>1.2.2</title>
 </head>
 <body>
-    <header>
+    <div id="sidenav">
         <h1>quina</h1>
-    </header>
+        <a href="../1.2.1 - validação de formulário/index.html">confirmação do nome</a>
+        <a href="../1.2.2 - calculadora simples/index.html">calculadora</a>
+        <a href="../1.2.3 - estruturas condicionais/index.html">permissão de dirigir</a>
+        <a href="../1.2.4 - estruturas de repetição/index.html">lorem ipsum</a>
+        <a href="../1.2.5 - manipulação do dom/index.html">playground</a>
+    </div>
     <main>
-        <h3>por favor só coloque números esse sistema não sabe filtrar :(</h3>
-        <h4>nós (eu) esperamos que goste de notação polonesa reversa</h4>
+        <p>nós (eu) esperamos que goste de notação polonesa reversa</p>
         <div id="calculo"> <!--adivinhe por que eu deletei a página toda quando o usuário insere o sinal :DDDD eu odeio a minha vida-->
             <div id="numeroUmCaixa">
                 <label for="numeroUm">digite o primeiro número:</label>
-                <input id="numeroUm" type="number">
+                <input id="numeroUm" type="number" onkeypress="return /[0-9.]/i.test(event.key)"> <!--esse onkeypress é necessário no firefox, deus abençoe o stackoverflow-->
                 <button id="numeroUmBotao" onclick="lerNumeroUm()">confirmar</button>
             </div>
 
             <div id="numeroDoisCaixa" style="display: none">
                 <label for="numeroDois">digite o segundo número:</label>
-                <input id="numeroDois" type="number">
+                <input id="numeroDois" type="number" onkeypress="return /[0-9.]/i.test(event.key)">
                 <button id="numeroDoisBotao" onclick="lerNumeroDois()">confirmar</button>
             </div>
 
             <div id="ops" style="display: none">
                 <p>qual operação será efetuada?</p>
-                <button class="op" id="adicao" title="adição" onclick="final(); adi()">+</button>
+                <button class="op" id="adicao" title="adição (ESSA EM ESPECÍFICO NÃO FUNCIONA)" onclick="final(); adi()">+</button>
                 <button class="op" id="subtracao" title="subtração" onclick="final(); sub()">-</button>
                 <button class="op" id="multiplicacao" title="multiplicação" onclick="final(); mult()">*</button>
                 <button class="op" id="divisao" title="divisão" onclick="final(); div()">/</button>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../sidenav.css">
+    <title>1.2.3</title>
+</head>
+<body>
+    <div id="sidenav">
+        <h1>quina</h1>
+        <a href="../1.2.1 - validação de formulário/index.html">confirmação do nome</a>
+        <a href="../1.2.2 - calculadora simples/index.html">calculadora</a>
+        <a href="../1.2.3 - estruturas condicionais/index.html">permissão de dirigir</a>
+        <a href="../1.2.4 - estruturas de repetição/index.html">lorem ipsum</a>
+        <a href="../1.2.5 - manipulação do dom/index.html">playground</a>
+    </div>
+    <main>
+        <div id="caixaEntrada">
+            <label for="digitarIdade">digite sua idade:</label>
+            <input id="digitarIdade" type="number" onkeypress="return /[0-9]/i.test(event.key)"> <!--esse onkeypress é necessário no firefox, deus abençoe o stackoverflow-->
+            <button id="digitarIdadeBotao" onclick="lerNumero()">confirmar</button>
+        </div>
+        <div id="resposta" style="display:none">
+            <p id="respostaIdade">lorem ipsum</p>
+            <h4 id="respostaDirigir">dolor sit amet</h4>
+            <button id="purge" onclick="purge()">recomeçar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
