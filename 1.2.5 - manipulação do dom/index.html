@@ -15,6 +15,7 @@
         <a href="../1.2.3 - estruturas condicionais/index.html">permissão de dirigir</a>
         <a href="../1.2.4 - estruturas de repetição/index.html">lorem ipsum</a>
         <a href="../1.2.5 - manipulação do dom/index.html">playground</a>
+        <img id="hatsune-miku" src="./assets/miku-vocaloid.gif" style="display: none;">
     </div>
     <main>
         <h2>boas-vindas ao playground.</h2>
@@ -23,14 +24,18 @@
             <div><button id="btn-2" onclick="botaoPadrao()" disabled=>deixar o fundo salmão de novo</button></div>
             <div><button id="btn-3" onclick="sidebarVermelho()">deixar o sidebar vermelho</button></div>
             <div><button id="btn-4" onclick="sidebarPadrao()" disabled>deixar o sidebar preto de novo</button></div>
-            <div><button id="btn-5" onclick="miku()">botar um gif da hatsune miku</button></div>
-            <div><button id="btn-6" onclick="musica()">ligar o rádio</button></div>
-            <div><button id="btn-7"onclick="esconderBotao7()">esconder esse botão</button></div>
-            <div><button id="btn-8" onclick="mostrarBotao7()" disabled>mostrar aquele botão</button></div>
-            <div><button id="btn-9">adivinhar se um número é par ou ímpar</button></div>
-            <div><button id="btn-10">perguntar seu nome</button></div>
+            <div><button id="btn-5"10 onclick="qualNome()">perguntar seu nome</button></div>
+            <div><button id="btn-6"7 onclick="esconderBotao6()">esconder esse botão</button></div>
+            <div><button id="btn-7"8 onclick="mostrarBotao6()" disabled>mostrar aquele botão</button></div>
+            <div><button id="btn-8"9 onclick="parImpar()">adivinhar se um número é par ou ímpar</button></div>
+            <div><button id="btn-9" onclick="mikuOn()">botão hatsune miku</button></div>
+            <div><button id="btn-10"6 onclick="musica()">ligar o rádio</button></div>
         </div>
     </main>
+    <audio controls id="incrivel" style="display: none;">
+        <source src="./assets/waow.mp3" type="audio/mp3">
+        Seu navegador não tem suporte ao elemento &lt;audio/&gt;.
+    </audio> 
     <script src="script.js"></script>
 </body>
 </html>

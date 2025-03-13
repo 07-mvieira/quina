@@ -4,13 +4,20 @@
 }
 
 body{
-    background-color: #f2ab91;
+    background-color: #f29c91;
     font-family: cursive;
 }
 
 #sidenav{
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
+}
+
+#hatsune-miku{
+    width: 220px;
+    height: auto;
+    position: fixed;
+    bottom: 0;
 }
 
 h2{
@@ -37,7 +44,8 @@ h2{
     width: 150px;
 }
 
-button:hover{
+#grid-container button:hover{
+    border-color: #000;
     cursor: pointer;
 }
 
@@ -47,7 +55,7 @@ button:hover{
 }
 
 #btn-2{
-    background-color: #f2ab91;
+    background-color: #f29c91;
 }
 
 #btn-2:disabled{
@@ -74,11 +82,16 @@ button:hover{
     cursor: default;
 }
 
-#btn-5{
-    background-color: #999;
-    color: #00ffd9;
+#btn-7:disabled{
+    cursor: default;
 }
 
-#btn-8:disabled{
-    cursor: default;
+#btn-9{
+    background-color: #999;
+    color: #0fd;
+}
+
+#btn-10{
+    background-color: #ff68d9;
+    color: #fe0;
 }

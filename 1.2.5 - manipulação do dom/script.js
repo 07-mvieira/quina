@@ -1,9 +1,17 @@
+const fire = document.getElementById("incrivel");
+
 document.getElementById("btn-2").setAttribute("disabled", true);
 document.getElementById("btn-4").setAttribute("disabled", true);
+document.getElementById("btn-7").setAttribute("disabled", true);
+document.getElementById("btn-9").setAttribute("onclick", "mikuOn()");
+document.getElementById("btn-9").style.backgroundColor = "#999"
+document.getElementById("btn-9").style.color = "#0fd"
+document.getElementById("btn-10").style.backgroundColor = "#ff68d9";
+document.getElementById("btn-10").innerHTML = `ligar o rádio`;
 
 function botaoVermelho(){
     document.querySelector("body").style.backgroundColor = "#ac2828";
-    document.querySelector("h2").style.color = "#fff"
+    document.querySelector("h2").style.color = "#fff";
 
     document.getElementById("btn-1").style.backgroundColor = "#d99518";
     document.getElementById("btn-1").style.color = "#fff";
@@ -15,7 +23,7 @@ function botaoVermelho(){
 
 function botaoLaranja(){
     document.querySelector("body").style.backgroundColor = "#d99518";
-    document.querySelector("h2").style.color = "#fff"
+    document.querySelector("h2").style.color = "#fff";
 
     document.getElementById("btn-1").style.backgroundColor = "#ffe550";
     document.getElementById("btn-1").style.color = "#000";
@@ -27,7 +35,7 @@ function botaoLaranja(){
 
 function botaoAmarelo(){
     document.querySelector("body").style.backgroundColor = "#ffe550";
-    document.querySelector("h2").style.color = "#000"
+    document.querySelector("h2").style.color = "#000";
 
     document.getElementById("btn-1").style.backgroundColor = "#5eb25e";
     document.getElementById("btn-1").style.color = "#fff";
@@ -51,10 +59,10 @@ function botaoVerde(){
 
 function botaoAzul(){
     document.querySelector("body").style.backgroundColor = "#57c1c1";
-    // document.querySelector("h2").style.color = "#fff"
+    document.querySelector("h2").style.color = "#fff"
 
     document.getElementById("btn-1").style.backgroundColor = "#505bbd";
-    // document.getElementById("btn-1").style.color = "#fff";
+    document.getElementById("btn-1").style.color = "#fff";
     document.getElementById("btn-1").innerHTML = `deixar o fundo anil`;
     document.getElementById("btn-1").setAttribute("onclick", "botaoAnil()");
 
@@ -63,10 +71,10 @@ function botaoAzul(){
 
 function botaoAnil(){
     document.querySelector("body").style.backgroundColor = "#505bbd";
-    // document.querySelector("h2").style.color = "#fff"
+    document.querySelector("h2").style.color = "#fff"
 
     document.getElementById("btn-1").style.backgroundColor = "#aa37c6";
-    // document.getElementById("btn-1").style.color = "#fff";
+    document.getElementById("btn-1").style.color = "#fff";
     document.getElementById("btn-1").innerHTML = `deixar o fundo roxo`;
     document.getElementById("btn-1").setAttribute("onclick", "botaoRoxo()");
 
@@ -86,7 +94,7 @@ function botaoRoxo(){
 }
 
 function botaoPadrao(){
-    document.querySelector("body").style.backgroundColor = "#f2ab91";
+    document.querySelector("body").style.backgroundColor = "#f29c91";
     document.querySelector("h2").style.color = "#000"
 
     document.getElementById("btn-2").setAttribute("disabled", true);
@@ -106,7 +114,7 @@ function sidebarVermelho(){
 
 function sidebarLaranja(){
     document.getElementById("sidenav").style.backgroundColor = "#d99518";
-    // document.querySelector("h1").style.color = "#fff"
+    document.querySelector("h1").style.color = "#fff"
 
     document.getElementById("btn-3").style.backgroundColor = "#ffe550";
     document.getElementById("btn-3").style.color = "#000";
@@ -181,6 +189,46 @@ function sidebarPadrao(){
     document.querySelector("h1").style.color = "#fff"
 
     document.getElementById("btn-4").setAttribute("disabled", true);
+}
+
+function mikuOn(){
+    alert(`i'm hiding in your webpage now :D`);
+    document.getElementById("hatsune-miku").style.display = "block";
+    document.getElementById("btn-9").setAttribute("onclick", "mikuOff()");
+    document.getElementById("btn-9").style.backgroundColor = "#0fd"
+    document.getElementById("btn-9").style.color = "#999"
+}
+
+function mikuOff(){
+    alert(`bye bye!`);
+    document.getElementById("hatsune-miku").style.display = "none";
+    document.getElementById("btn-9").setAttribute("onclick", "mikuOn()");
+    document.getElementById("btn-9").style.backgroundColor = "#999"
+    document.getElementById("btn-9").style.color = "#0fd"
+}
+
+function esconderBotao6(){
+    document.getElementById("btn-6").style.visibility = "hidden";
+    document.getElementById("btn-7").removeAttribute("disabled");
+}
+
+function mostrarBotao6(){
+    document.getElementById("btn-6").style.visibility = "visible";
+    document.getElementById("btn-7").setAttribute("disabled", true);
+}
+
+function musica(){
+    fire.play();
+    document.getElementById("btn-10").style.backgroundColor = "#802189";
+    document.getElementById("btn-10").setAttribute("onclick", "pause()");
+    document.getElementById("btn-10").innerHTML = `desligar o rádio`;
+}
+
+function pause(){
+    fire.pause();
+    document.getElementById("btn-10").style.backgroundColor = "#ff68d9";
+    document.getElementById("btn-10").setAttribute("onclick", "musica()")
+    document.getElementById("btn-10").innerHTML = `ligar o rádio`;
 }
 
 /*todas as cores
