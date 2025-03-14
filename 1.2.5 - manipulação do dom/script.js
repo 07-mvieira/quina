@@ -1,5 +1,9 @@
 const fire = document.getElementById("incrivel");
 
+let nomeInput;
+let nome;
+let fireSong;
+
 document.getElementById("btn-2").setAttribute("disabled", true);
 document.getElementById("btn-4").setAttribute("disabled", true);
 document.getElementById("btn-7").setAttribute("disabled", true);
@@ -7,7 +11,7 @@ document.getElementById("btn-9").setAttribute("onclick", "mikuOn()");
 document.getElementById("btn-9").style.backgroundColor = "#999"
 document.getElementById("btn-9").style.color = "#0fd"
 document.getElementById("btn-10").style.backgroundColor = "#ff68d9";
-document.getElementById("btn-10").innerHTML = `ligar o rádio`;
+document.getElementById("btn-10").innerHTML = `ligar o rádio 🎲`;
 
 function botaoVermelho(){
     document.querySelector("body").style.backgroundColor = "#ac2828";
@@ -191,6 +195,53 @@ function sidebarPadrao(){
     document.getElementById("btn-4").setAttribute("disabled", true);
 }
 
+function qualNome(){
+    let textoNome;
+    let nomeInput = window.prompt("olá, qual é o seu nome?");
+    nome = nomeInput;
+
+    if (nome == ""){
+        textoNome = `por favor, insira um nome!`
+    } else if (nome == null){
+        console.log("a")
+    } else {
+        alert(`entendi, seu nome é ${nome}!`)
+        document.getElementById("btn-5").setAttribute("onclick", "oi()")
+        document.getElementById("btn-5").innerHTML = `olá ${nome}`
+        console.log(nome)
+    }
+}
+
+function oi(){
+    console.log(nome)
+    alert(`e aiii ${nome} como vai :3`)
+}
+
+function esconderBotao6(){
+    document.getElementById("btn-6").style.visibility = "hidden";
+    document.getElementById("btn-7").removeAttribute("disabled");
+}
+
+function mostrarBotao6(){
+    document.getElementById("btn-6").style.visibility = "visible";
+    document.getElementById("btn-7").setAttribute("disabled", true);
+}
+
+function parImpar(){
+    let numeroInput = window.prompt("escolha um número inteiro:")
+
+    if(numeroInput % 2 == 1){
+        console.log(numeroInput)
+        alert("eu acho que esse número é ímpar!")
+    } else if(numeroInput % 2 == 0){
+        console.log(numeroInput)
+        alert("eu acho que esse número é par!")
+    } else {
+        console.log(numeroInput)
+        alert("eu só aceito números inteiros!")
+    }
+}
+
 function mikuOn(){
     alert(`i'm hiding in your webpage now :D`);
     document.getElementById("hatsune-miku").style.display = "block";
@@ -207,17 +258,19 @@ function mikuOff(){
     document.getElementById("btn-9").style.color = "#0fd"
 }
 
-function esconderBotao6(){
-    document.getElementById("btn-6").style.visibility = "hidden";
-    document.getElementById("btn-7").removeAttribute("disabled");
-}
-
-function mostrarBotao6(){
-    document.getElementById("btn-6").style.visibility = "visible";
-    document.getElementById("btn-7").setAttribute("disabled", true);
-}
-
 function musica(){
+    let fireSong = Math.random() * 4;
+    console.log(`inicial: ${fireSong}`);
+    fireSong = Math.round(fireSong);
+    console.log(`arredondado: ${fireSong}`);
+    //chance de 1 em 5(?)
+
+    if (fireSong == 0){
+        document.getElementById("incrivel").setAttribute("src", "./assets/o mah gah.mp3")
+    } else {
+         document.getElementById("incrivel").setAttribute("src", "./assets/waow.mp3")
+    }
+
     fire.play();
     document.getElementById("btn-10").style.backgroundColor = "#802189";
     document.getElementById("btn-10").setAttribute("onclick", "pause()");
@@ -228,7 +281,7 @@ function pause(){
     fire.pause();
     document.getElementById("btn-10").style.backgroundColor = "#ff68d9";
     document.getElementById("btn-10").setAttribute("onclick", "musica()")
-    document.getElementById("btn-10").innerHTML = `ligar o rádio`;
+    document.getElementById("btn-10").innerHTML = `ligar o rádio 🎲`;
 }
 
 /*todas as cores

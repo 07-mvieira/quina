@@ -64,10 +64,11 @@ h2{
 
 #btn-2:disabled:hover{
     cursor: default;
+    border-color: #fff;
 }
 
 #btn-3{
-    background-color: #ac2828;
+    background-color: #57c1c1;
     color: #fff;
 }
 
@@ -79,11 +80,26 @@ h2{
 #btn-4:disabled{
     background-color: #00000088;
     color: #ffffff88;
-    cursor: default;
 }
 
-#btn-7:disabled{
+#btn-4:disabled:hover{
     cursor: default;
+    border-color: #fff;
+}
+
+#btn-5{
+    background-color: #6ed84a;
+    color: #d21a1a;
+}
+
+#btn-7:disabled:hover{
+    cursor: default;
+    border-color: #fff;
+}
+
+#btn-8{
+    background-color: #fe0;
+    color: #d33fb8;
 }
 
 #btn-9{
