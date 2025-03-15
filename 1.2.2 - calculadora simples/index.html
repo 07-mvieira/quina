@@ -22,19 +22,19 @@
         <div id="calculo"> <!--adivinhe por que eu deletei a página toda quando o usuário insere o sinal :DDDD eu odeio a minha vida-->
             <div id="numeroUmCaixa">
                 <label for="numeroUm">digite o primeiro número:</label>
-                <input id="numeroUm" type="number" onkeypress="return /[0-9.]/i.test(event.key)"> <!--esse onkeypress é necessário no firefox, deus abençoe o stackoverflow-->
+                <input id="numeroUm" type="number" onkeypress="return /[0-9.-]/i.test(event.key)"> <!--esse onkeypress é necessário no firefox, deus abençoe o stackoverflow-->
                 <button id="numeroUmBotao" onclick="lerNumeroUm()">confirmar</button>
             </div>
 
             <div id="numeroDoisCaixa" style="display: none">
                 <label for="numeroDois">digite o segundo número:&nbsp;</label>
-                <input id="numeroDois" type="number" onkeypress="return /[0-9.]/i.test(event.key)">
+                <input id="numeroDois" type="number" onkeypress="return /[0-9.-]/i.test(event.key)">
                 <button id="numeroDoisBotao" onclick="lerNumeroDois()">confirmar</button>
             </div>
 
             <div id="ops" style="display: none">
                 <p>qual operação será efetuada?</p>
-                <button class="op" id="adicao" title="adição (ESSA EM ESPECÍFICO NÃO FUNCIONA)" onclick="final(); adi()">+</button>
+                <button class="op" id="adicao" title="adição" onclick="final(); adi()">+</button>
                 <button class="op" id="subtracao" title="subtração" onclick="final(); sub()">-</button>
                 <button class="op" id="multiplicacao" title="multiplicação" onclick="final(); mult()">*</button>
                 <button class="op" id="divisao" title="divisão" onclick="final(); div()">/</button>

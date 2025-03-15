@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     background-color: #f29c91;
     font-family: cursive;
@@ -13,8 +8,20 @@ body{
     color: #fff;
 }
 
+h1{
+    color: #ff81ff;
+}
+
+#sidenav a{
+    color: #fff;
+}
+
+#sidenav a:hover{
+    color: #ff69b4;
+}
+
 #hatsune-miku{
-    width: 220px;
+    width: 250px;
     height: auto;
     position: fixed;
     bottom: 0;

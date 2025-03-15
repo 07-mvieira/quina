@@ -27,13 +27,11 @@ function adi(){
     console.log(`${n1}, ${n2}`);
     console.log(n1 + n2);
 
-    let n1 = parseFloat(document.getElementById("numeroUm").value);
-    let n2 = parseFloat(document.getElementById("numeroDois").value);
+    let n1Float = parseFloat(n1);
+    let n2Float = parseFloat(n2);
 
-    res = n1 + n2;
-    // essa coisa deu nan a primeira vez q eu fiz e eu chega hiperventilei 
-    // *****NaN***** em times negrito é a coisa mais assustadora q existe
-    // na segunda vez 3 + 3 deu 33.
+    res = n1Float + n2Float;
+    // os de verdade conhecem os crimes de guerra da adição.
     document.getElementById("resultado").innerHTML = `${res}`
 }
 

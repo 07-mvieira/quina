@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
 }
@@ -31,28 +29,40 @@ body{
     color: #fff;
 }
 
+p, label{
+    font-size: 18px;
+}
+
 input{
+    appearance: textfield;
     background-color: #000;
     color: #7fff00;
+    font-size: 18px;
 }
 
 button{
     background-color: #a8dbdb;
     border-color: #a8dbdb;
     border-radius: 3px;
+    font-size: 18px;
     margin: 3px;
     padding: 5px;
 }
 
 button:hover{
     background-color: #4e6969;
+    color: #fff;
+    cursor: pointer;
 }
 
-#adicao:hover{
-    cursor: help;
+button:disabled:hover{
+    background-color: #a8dbdb;
+    color: initial;
+    cursor: default;
 }
 
 strong{
-    color: red;
+    background-color: #000;
+    color: #7fff00;
     font-weight: 900;
 }

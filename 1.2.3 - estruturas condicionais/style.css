@@ -1,7 +1,73 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body{
+    background-color: #858788;
+    color: #fff;
+}
+
+#sidenav{
+    background-color: #111;
+}
+
+#sidenav h1{
+    color: #fff;
+}
+
+#sidenav a{
+    color: #fd0;
+    margin: -30;
+    padding: 0;
+    font-weight: normal;
+}
+
+#sidenav a:hover{
+    color: #fff;
+}
+
+p, label{
+    font-size: 18px;
+}
+
+input{
+    appearance: textfield;
+    background-color: #eef;
+    border-color: #b30a0a;
+    border-radius: 15px;
+    border-style: solid;
+    color: #000000;
+    font-size: 18px;
+    height: 28px;
+    justify-content: center;
+    text-align: center;
+    width: 77px;
+}
+
+button{
+    background-color: #858788;
+    border-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    margin: 3px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: #6b6d6e;
+    cursor: pointer;
+}
+
+h4{
+    font-size: 18px;
+    margin-top: 8px;
+}
+
 .negado{
-    color: #b30a0a;
+    color: #a20;
 }
 
 .permitido{
-    color: #13a738;
+    color: #0f4;
 }
