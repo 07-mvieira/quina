@@ -1,3 +1,56 @@
+*{
+    font-family: cursive;
+}
+
+#sidenav{
+    background-color: #fea8;
+}
+
+#sidenav h1{
+    color: #3250d6;
+}
+
+#sidenav a{
+    color: #70d;
+}
+
+#sidenav a:hover{
+    color: #f08;
+}
+
 body{
+    background-color: #fab;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+label, p{
+    font-size: 18px;
+    padding: 5px;
+}
+
+input{
+    background-color: #470c48;
+    border-radius: 8px;
+    color: #fc0;
+    font-size: 18px;
+    padding-left: 5px;
+    width: 200px;
+}
+
+button{
+    background-color: #cf1c58;
+    border-color: #fc0;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    color: #fc0;
+    font-size: 18px;
+    margin: 3px;
+    padding: 4px;
+}
+
+button:hover{
+    background-color: #851466;
+    color: #fff;
+    cursor: pointer;
 }

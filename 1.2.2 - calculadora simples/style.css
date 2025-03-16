@@ -63,6 +63,11 @@ button:disabled:hover{
 
 strong{
     background-color: #000;
+    border-color: #ddd;
+    border-radius: 1px;
+    border-style:groove;
     color: #7fff00;
     font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
 }

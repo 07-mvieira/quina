@@ -13,11 +13,22 @@
         <a href="../1.2.1 - validação de formulário/index.html">confirmação do nome</a>
         <a href="../1.2.2 - calculadora simples/index.html">calculadora</a>
         <a href="../1.2.3 - estruturas condicionais/index.html">permissão de dirigir</a>
-        <a href="../1.2.4 - estruturas de repetição/index.html">lorem ipsum</a>
+        <a href="../1.2.4 - estruturas de repetição/index.html">cronômetro simples</a>
         <a href="../1.2.5 - manipulação do dom/index.html">playground</a>
     </div>
     <main>
-        
+        <div id="caixaEntrada">
+            <label for="digitarTempo">digite um tempo <strong>em segundos</strong>:</label>
+            <input id="digitarTempo" type="number" onkeypress="return /[0-9]/i.test(event.key)"> <!--esse onkeypress é necessário no firefox, deus abençoe o stackoverflow-->
+            <button id="digitarTempoBotao" onclick="lerTempo()">confirmar</button>
+
+            <h3 id="cronometro" style="display: none;"></h3>
+            <div id="tempoEsgotadoCaixa" style="display: none;">
+                <p id="tempoEsgotado">Tempo esgotado!</p>
+                <button id="purge" onclick="purge()">recomeçar</button>
+            </div>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
