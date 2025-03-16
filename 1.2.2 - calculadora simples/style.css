@@ -33,6 +33,11 @@ p, label{
     font-size: 18px;
 }
 
+p{
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
 input{
     appearance: textfield;
     background-color: #000;
@@ -46,6 +51,7 @@ button{
     border-radius: 3px;
     font-size: 18px;
     margin: 3px;
+    min-width: 33px;
     padding: 5px;
 }
 
@@ -65,7 +71,7 @@ strong{
     background-color: #000;
     border-color: #ddd;
     border-radius: 1px;
-    border-style:groove;
+    border-style: groove;
     color: #7fff00;
     font-weight: 900;
     padding-left: 10px;
