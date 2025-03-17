@@ -1,4 +1,4 @@
-let tempo = 0;
+/*let tempo = 0;
 
 function lerTempo(){
     tempo = document.getElementById("digitarTempo").value;
@@ -12,4 +12,4 @@ function lerTempo(){
         document.getElementById("cronometro").innerHTML = tempo;
     }
     while(tempo > 0)
-}
+}*/
