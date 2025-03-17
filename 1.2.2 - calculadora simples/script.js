@@ -32,37 +32,37 @@ function adi(){
 
     res = n1Float + n2Float;
     // os de verdade conhecem os crimes de guerra da adição.
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function sub(){
     let res = n1 - n2;
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function mult(){
     let res = n1 * n2;
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function div(){
     let res = n1 / n2;
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function pot(){
     let res = n1 ** n2;
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function raiz(){
     let res = n1 ** (1 / n2);
-    document.getElementById("resultado").innerHTML = `${res}`
+    document.getElementById("resultado").innerHTML = res
 }
 
 function mod(){
     let res = n1 % n2;
-    document.getElementById("resultado").innerHTML = `${res}`;
+    document.getElementById("resultado").innerHTML = res
 }
 
 function purge(){
